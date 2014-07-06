@@ -23,5 +23,9 @@ class FuncionarioController {
             echo "<br>";
         }
     }
+    
+    public function cadastrarFuncionario(){
+        
+    }
 
 }
