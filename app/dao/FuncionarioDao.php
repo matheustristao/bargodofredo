@@ -29,12 +29,8 @@ class FuncionarioDao {
                 where p.COD_PESSOA = F.COD_PESSOA 
                 and F.SE_ATIVO LIKE 'S'";
 
-        $lista = $instanciaConection->listData($query);
+        return $lista = $instanciaConection->listData($query);
 
-        while ($row = mysqli_fetch_array($lista)) {
-            echo $row['NOME'] . " " . $row['CPF'];
-            echo "<br>";
-        }
     }
 
 }

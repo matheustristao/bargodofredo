@@ -16,7 +16,12 @@ class FuncionarioController {
 
         $funcionarioDao = self::instanciaFuncionarioDao();
 
-        $funcionarioDao->listFuncionario();
+        $lista = $funcionarioDao->listFuncionario();
+        
+        while ($row = mysqli_fetch_array($lista)) {
+            echo $row['NOME'] . " " . $row['CPF'];
+            echo "<br>";
+        }
     }
 
 }

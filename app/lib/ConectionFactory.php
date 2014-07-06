@@ -3,7 +3,7 @@
 class ConectionFactory {
 
     static protected $mysqli;
-
+    
     private function conectaBanco() {
         $MySQL = array(
             'servidor' => 'localhost',
