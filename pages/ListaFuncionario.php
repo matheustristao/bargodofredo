@@ -1,29 +1,17 @@
 <?php
 
+require('../app/controller/FuncionarioController.php');
+require('../app/lib/ConectionFactory.php');
+require('../app/dao/FuncionarioDao.php');
 
-class ListaFuncionario {
-   
-    static private $funcionarioController;
 
-    private function instanciaFuncionarioController() {
+$funcionarioController;
 
-        if (!isset(self::$funcionarioController)) {
-            self::$funcionarioController = new FuncionarioController();
-        }
-        return self::$funcionarioController;
-    }
+if (!isset($funcionarioController)) {
+    $funcionarioController = new FuncionarioController();
+}
 
-    
-    public function listarFuncionarios() {
-        
-        require('/app/controller/LoginController.php');
-        
-        $funcionarioController = self::instanciaFuncionarioController();
+$funcionarioController->listarFuncionarios();
 
-        $funcionarioController-> listarFuncionarios();
-    }
 
-   
-    
-    }
-  
+

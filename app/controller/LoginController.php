@@ -1,8 +1,5 @@
 <?php
 
-require ('app/model/Administrador.php');
-require ('app/dao/AdministradorDAO.php');
-
 class LoginController {
 
     static private $administrador;
@@ -39,7 +36,7 @@ class LoginController {
         } else {
 
             print '<script type="text/javascript">';
-            print 'alert("Usuario não existe")';
+            print 'alert("Usuario ou senha incorreto")';
             print '</script>';
         }
     }

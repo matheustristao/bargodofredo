@@ -15,7 +15,7 @@ class FuncionarioDao {
     
     
     public function listFuncionario() {
-
+        
         $instanciaConection = self::instanciaConection();
 
         $query = "select 

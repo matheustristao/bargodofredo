@@ -53,6 +53,10 @@
 </html>
 
 <?php
+       
+require('/app/controller/LoginController.php');
+require ('app/model/Administrador.php');
+require ('app/dao/AdministradorDAO.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -71,13 +75,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         print 'alert("senha deve ser preenchida")';
         print '</script>';
     } else {
-            
-           require('/app/controller/LoginController.php');
-    
+   
            $login = new LoginController();
-        
            $login->validarLogin($attAdm[0],$attAdm[1]);
-      
     }
 
 }
