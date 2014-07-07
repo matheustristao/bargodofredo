@@ -32,6 +32,7 @@ class LoginController {
         $validacao = $administradordao->consultaLogin($administrador->getId(), $administrador->getPassword());
 
         if ($validacao == 1) {
+            //header("Location: pages/CadastraFuncionario.php");    
             header("Location: pages/Principal.php");
         } else {
 

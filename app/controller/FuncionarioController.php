@@ -25,7 +25,7 @@ class FuncionarioController {
     }
     
     public function cadastrarFuncionario(){
-        
+   
     }
 
 }
