@@ -13,12 +13,6 @@ if (!isset($funcionarioController)) {
 
 $funcionarioController->listarFuncionarios();
 
-if (isset($_POST['name'])) {
-$name = strip_tags($_POST['name']);
-$cpf = strip_tags($_POST['cpf']);
-echo "Nome		=".$name."</br>";	
-echo "Cpf		=".$cpf."</br>";	
-}
  ?>
 
 <html>
