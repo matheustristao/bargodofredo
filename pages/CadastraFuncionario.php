@@ -22,14 +22,10 @@
 		<label for="cpf">CPF</label>
 	</p>
 
-	<p class="sexo">
-		<input type="text" name="sexo" id="sexo" />
-		<label for="sexo">Sexo</label>
-	</p>
-
+    
         <p class="ano_nascimento">
 		<input type="text" name="ano_nascimento" id="ano_nascimento" />
-		<label for="sexo">Ano de nascimento</label>
+		<label for="ano_nascimento">Ano de nascimento</label>
 	</p>
         
           <p class="salario">
@@ -40,6 +36,15 @@
           <p class="carteira_trabalho">
 		<input type="text" name="carteira_trabalho" id="carteira_trabalho" />
 		<label for="sexo">Carteira de trabalho</label>
+	</p>
+    
+        <p class="sexo">
+               <select name = "sexo" id = "sexo">
+                     <option value = "M">  --  </option>
+                     <option value = "M"> Masculino </option>
+                     <option value = "F"> Feminino </option>
+		</select>
+            <label for="sexo">Sexo</label>
 	</p>
 
 	<p class="submit">

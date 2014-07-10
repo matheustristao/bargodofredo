@@ -46,7 +46,7 @@ class FuncionarioController {
         $funcionario->setCarteiraTrabalho($carteira_trabalho);
         
        
-        $funcionarioDao->cadastrarFuncionario($funcionario->getNome(),$funcionario->getCpf(),$funcionario->getSexo(),$funcionario->getAno_nascimento(),$funcionario->getSalario(),$funcionario->getCarteiraTrabalho());
+        $funcionarioDao->salvarFuncionario($funcionario->getNome(),$funcionario->getCpf(),$funcionario->getSexo(),$funcionario->getAno_nascimento(),$funcionario->getSalario(),$funcionario->getCarteiraTrabalho());
     }
 
 }
