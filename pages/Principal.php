@@ -1,6 +1,6 @@
 <!DOCTYPE html>
   <head>
-    <title>Bar Godofredo</title>
+    <title>Bar Godofredo </title>
     <meta name="description" content="" />
     <meta name="author" content="templatemo">
     <meta charset="UTF-8">
@@ -35,7 +35,7 @@
     	<!-- logo start -->
     <div class="logocontainer">
     	<div class="row">
-        	<h1><a href="#">Bar Godofredo</a></h1>
+        	<h1><a href="#">Bar Godofredo</a></h1> 
             <div class="clear"></div>
            
        </div>
