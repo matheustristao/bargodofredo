@@ -3,6 +3,7 @@
 require('../app/controller/FuncionarioController.php');
 require('../app/lib/ConectionFactory.php');
 require('../app/dao/FuncionarioDao.php');
+require('../app/model/Funcionario.php');
 
 $funcionarioController;
 
