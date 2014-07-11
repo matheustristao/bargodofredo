@@ -1,6 +1,6 @@
-<html>
-    
-    <?php
+  <h1> Lista de Funcionários em atividade </h1>  
+
+  <?php
 
     require('../app/controller/FuncionarioController.php');
     require('../app/lib/ConectionFactory.php');
@@ -12,69 +12,51 @@
     if (!isset($funcionarioController)) {
         $funcionarioController = new FuncionarioController();
     }
-
-    ?>
-    
-    <h1> Lista de Funcionários em atividade </h1>
-
-    
-    <table border = 0>
-        <tr> 
-            <th width = 300 align ="left">
-                 <h2> Nome </h2>
-            </th>
-            <th width = 200 align ="left">
-                 <h2> CPF </h2>
-            </th>
-            <th width = 200 align ="left">
-                 <h2> Salario </h2>
-            </th>
-        </tr>
-        
-        <tr>
-            <td>
-                <?php
-                    
+  
+   echo  '<table border = 1>';
+       echo '<tr>'; 
+            echo '<th width = 300 align ="left">';
+                 echo '<h2> Nome </h2>';
+            echo '</th>';
+            echo '<th width = 200 align ="left">'; 
+                echo  '<h2> CPF </h2>';
+            echo '</th>';
+            echo '<th width = 200 align ="left">';
+                echo '<h2> Salario </h2>';
+           echo '</th>';
+       echo '</tr>';
+                        
                     $lista = $funcionarioController->listarFuncionarios();
+                    $iteratorColor = 0;
                     
                     while ($row = mysqli_fetch_array($lista)) {
-                    echo $row['NOME'];
-                    echo "<hr>";
-                    echo "<br>";
+                    
+                   $iteratorColor = $iteratorColor + 1;     
+                    
+                   if($iteratorColor%2 == 0){
+                    echo '<tr>';
+                   }
+                   else{
+                       echo '<tr bgcolor = "778899">';
+                   }
+                        echo '<td>';
+                            echo $row['NOME'];
+                        echo '</td>';
+                        
+                        echo '<td>';
+                            echo $row['CPF'];
+                        echo '</td>';    
+                            
+                      echo '<td>';
+                            echo $row['SALARIO'];
+                        echo '</td>';
                     }
-                    ?>
-            </td>
-            
-            <td>
-                 <?php
-                 
-                    $lista = $funcionarioController->listarFuncionarios();
-                 
-                    while ($row = mysqli_fetch_array($lista)) {
-                    echo $row['CPF'];
-                    echo "<hr>";
-                    echo "<br>";
-                    }
-                    ?>
-            </td>
-            
-            <td>
-                   <?php
-                   
-                    $lista = $funcionarioController->listarFuncionarios();
-                   
-                    while ($row = mysqli_fetch_array($lista)) {
-                    echo $row['SALARIO'];
-                    echo "<hr>";
-                    echo "<br>";
-                    }
-                    ?>
-            </td>
-            
-        </tr>
-    
-    </table>
+          
+   echo '</table>';
    
+   ?>
+   
+   <html>
     <form classe ="form">
     
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
@@ -86,5 +68,4 @@
         </p>
         
         </form>
-</html>        
-        
+       </html>
