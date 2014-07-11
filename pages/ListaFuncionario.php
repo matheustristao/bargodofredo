@@ -39,6 +39,7 @@
                     
                     while ($row = mysqli_fetch_array($lista)) {
                     echo $row['NOME'];
+                    echo "<hr>";
                     echo "<br>";
                     }
                     ?>
@@ -51,6 +52,7 @@
                  
                     while ($row = mysqli_fetch_array($lista)) {
                     echo $row['CPF'];
+                    echo "<hr>";
                     echo "<br>";
                     }
                     ?>
@@ -63,6 +65,7 @@
                    
                     while ($row = mysqli_fetch_array($lista)) {
                     echo $row['SALARIO'];
+                    echo "<hr>";
                     echo "<br>";
                     }
                     ?>
