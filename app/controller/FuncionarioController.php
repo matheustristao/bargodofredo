@@ -25,12 +25,8 @@ class FuncionarioController {
 
         $funcionarioDao = self::instanciaFuncionarioDao();
 
-        $lista = $funcionarioDao->listFuncionario();
+        return $lista = $funcionarioDao->listFuncionario();
         
-        while ($row = mysqli_fetch_array($lista)) {
-            echo $row['NOME'] . " " . $row['CPF'];
-            echo "<br>";
-        }
     }
     
     public function cadastrarFuncionario($nome,$cpf,$sexo,$ano_nascimento,$salario,$carteira_trabalho){

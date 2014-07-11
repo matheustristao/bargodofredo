@@ -25,7 +25,7 @@
     
         <p class="ano_nascimento">
 		<input type="text" name="ano_nascimento" id="ano_nascimento" />
-		<label for="ano_nascimento">Ano de nascimento</label>
+		<label for="ano_nascimento">Data de nascimento (Ex: 1990-04-17)</label>
 	</p>
         
           <p class="salario">

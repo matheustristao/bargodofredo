@@ -23,10 +23,11 @@ class FuncionarioDao {
             P.ANO_NASCIMENTO,
             P.CPF,
             F.SALARIO,
-            F.CARTEIRA_TRABALHO
+            F.CARTEIRA_TRABALHO,
+            F.SE_ATIVO
                 from  pessoa P,funcionario f 
                 where p.COD_PESSOA = F.COD_PESSOA 
-                and F.SE_ATIVO LIKE 'S'";
+                order by P.NOME";
 
         return $lista = $instanciaConection->listData($query);
     }
