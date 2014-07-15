@@ -65,5 +65,15 @@ class FuncionarioDao {
         $instanciaConection->executaQuery($query2);
             
     }
+    
+    public function atualizarFuncionario() {
+
+       
+    }
+    
+     public function deletarFuncionario() {
+
+        
+    }
 
 }

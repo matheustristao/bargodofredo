@@ -22,7 +22,7 @@
                 echo  '<h2> CPF </h2>';
             echo '</th>';
             echo '<th width = 200 align ="left">';
-                echo '<h2> Salario </h2>';
+                echo '<h2> Salário </h2>';
            echo '</th>';
        echo '</tr>';
                         
@@ -37,7 +37,8 @@
                     echo '<tr>';
                    }
                    else{
-                       echo '<tr bgcolor = "778899">';
+                       //echo '<tr bgcolor = "778899">';
+                       echo '<tr>';
                    }
                         echo '<td>';
                             echo $row['NOME'];
@@ -47,9 +48,23 @@
                             echo $row['CPF'];
                         echo '</td>';    
                             
-                      echo '<td>';
+                        echo '<td>';
                             echo $row['SALARIO'];
                         echo '</td>';
+                        
+                        echo '<td bgcolor = "white" align = "center"
+                            <form classe ="form">
+    
+                            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+                            <link rel="stylesheet" href="css/formulario.css" type="text/css" media="all" />  
+    
+                             <p class="submit">
+                                <input type="button" onclick="window.location = \'EditarFuncionario.php\' " value="Editar" />
+                             </p>
+        
+                             </form>
+                            
+                        </td>';
                     }
           
    echo '</table>';
