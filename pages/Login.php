@@ -76,8 +76,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         print '</script>';
     } else {
    
-           $login = new LoginController();
-           $login->validarLogin($attAdm[0],$attAdm[1]);
+           $session = new LoginController();
+           $session->validarLogin($attAdm[0],$attAdm[1]);
     }
 
 }

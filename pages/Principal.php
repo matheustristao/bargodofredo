@@ -70,7 +70,7 @@
              	   <img src="images/godo1.png" alt="home img 04">
                 </div>
                 <div class="templatemo_mainabout templatemo_botgap">
-                	<div class="templatemo_link"><a href = "Login.php">SAIR</a></div>
+                        <div class="templatemo_link"> <a href = '../Index.php'> SAIR </a></div>
                 </div>
                
                 
